@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THSC Tourism Assessment – THSCIA2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      background-color: #f4f6f8;
+    }
+    .hidden {
+      display: none !important;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 20px;
+      display: block;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 1em;
+    }
+    #quizSection {
+      margin-top: 30px;
+      padding: 20px;
+      border: 2px solid #003366;
+      background-color: #e6f2ff;
+    }
+    #error {
+      color: red;
+      margin-top: 10px;
+    }
+    .question {
+      margin-top: 20px;
+    }
+    #timer {
+      font-weight: bold;
+      color: #cc0000;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tourism Assessment 2025</h2>
+
+  <label for="formID">Enter Form ID</label>
+  <input type="text" id="formID" oninput="checkFormID()" placeholder="e.g. THSC2011" />
+
+  <div id="rollSection" class="hidden">
+    <label for="rollNo">Enter Roll Number</label>
+    <input type="text" id="rollNo" oninput="checkRollNo()" placeholder="e.g. THSC044" />
+  </div>
+
+  <div id="quizSection" class="hidden">
+    <p><strong>Final Assessment!</strong></p>
+
+    <label for="studentName">Student Name</label>
+    <input type="text" id="studentName" readonly />
+
+    <label for="instituteName">Institute Name</label>
+    <input type="text" id="instituteName" readonly />
+
+    <div id="timer">Time Remaining: 60:00</div>
+
+    <div class="question">
+      <p
+    </div>
+
+<form id="quizForm" method="POST" action="https://script.google.com/macros/s/AKfycbz-0KnYxTlElieB-lbz7y51upKs8YGoKzxG1HfTQ4NKuqH1hHMTdJxxxxDtinhBr7Q_/exec" onsubmit="handleSubmit(event)">
+  <!-- Hidden fields -->
+  <input type="hidden" name="formID" id="formIDField" />
+  <input type="hidden" name="rollNo" id="rollNoField" />
+  <input type="hidden" name="studentName" id="studentNameField" />
+  <input type="hidden" name="instituteName" id="instituteNameField" />
+
+<!-- Question 1 -->
+<div class="question">
+  <p>1. Which of the following is a primary function of office management?</p>
+  <label><input type="radio" name="q1" value="0"> Product development</label><br>
+  <label><input type="radio" name="q1" value="0"> Market segmentation</label><br>
+  <label><input type="radio" name="q1" value="0"> Sales forecasting</label><br>
+  <label><input type="radio" name="q1" value="1"> Record keeping</label><br>
+</div>
+
+<!-- Question 2 -->
+<div class="question">
+  <p>2. What does the acronym 'MIS' stand for in office management?</p>
+  <label><input type="radio" name="q2" value="1"> Management Information System</label><br>
+  <label><input type="radio" name="q2" value="0"> Marketing Intelligence Strategy</label><br>
+  <label><input type="radio" name="q2" value="0"> Managerial Input Sheet</label><br>
+  <label><input type="radio" name="q2" value="0"> Monthly Inventory Summary</label><br>
+</div>
+
+<!-- Question 3 -->
+<div class="question">
+  <p>3. Which of the following is NOT a typical office resource?</p>
+  <label><input type="radio" name="q3" value="0"> Furniture</label><br>
+  <label><input type="radio" name="q3" value="1"> Advertising budget</label><br>
+  <label><input type="radio" name="q3" value="0"> Stationery</label><br>
+  <label><input type="radio" name="q3" value="0"> Machinery</label><br>
+</div>
+
+<!-- Question 4 -->
+<div class="question">
+  <p>4. Which skill is most essential for an office manager?</p>
+  <label><input type="radio" name="q4" value="1"> Leadership</label><br>
+  <label><input type="radio" name="q4" value="0"> Graphic design</label><br>
+  <label><input type="radio" name="q4" value="0"> Coding</label><br>
+  <label><input type="radio" name="q4" value="0"> Data entry</label><br>
+</div>
+
+<!-- Question 5 -->
+<div class="question">
+  <p>5. What is the main purpose of filing systems in office management?</p>
+  <label><input type="radio" name="q5" value="0"> To increase employee salaries</label><br>
+  <label><input type="radio" name="q5" value="0"> To reduce marketing costs</label><br>
+  <label><input type="radio" name="q5" value="1"> To store and retrieve documents efficiently</label><br>
+  <label><input type="radio" name="q5" value="0"> To decorate the office</label><br>
+</div><!-- Question 6 -->
+<div class="question">
+  <p>6. Which of the following is a digital tool used in modern office management?</p>
+  <label><input type="radio" name="q6" value="0"> Fax machine</label><br>
+  <label><input type="radio" name="q6" value="1"> Spreadsheet software</label><br>
+  <label><input type="radio" name="q6" value="0"> Ledger book</label><br>
+  <label><input type="radio" name="q6" value="0"> Typewriter</label><br>
+</div>
+
+<!-- Question 7 -->
+<div class="question">
+  <p>7. Which department is responsible for handling incoming and outgoing mail in an office?</p>
+  <label><input type="radio" name="q7" value="1"> Mailroom</label><br>
+  <label><input type="radio" name="q7" value="0"> Human Resources</label><br>
+  <label><input type="radio" name="q7" value="0"> Finance</label><br>
+  <label><input type="radio" name="q7" value="0"> Reception</label><br>
+</div>
+
+<!-- Question 8 -->
+<div class="question">
+  <p>8. Which of the following is a key benefit of office automation?</p>
+  <label><input type="radio" name="q8" value="0"> Higher electricity bills</label><br>
+  <label><input type="radio" name="q8" value="0"> Increased manual labor</label><br>
+  <label><input type="radio" name="q8" value="1"> Improved efficiency</label><br>
+  <label><input type="radio" name="q8" value="0"> Reduced productivity</label><br>
+</div>
+
+<!-- Question 9 -->
+<div class="question">
+  <p>9. What is the role of a receptionist in office management?</p>
+  <label><input type="radio" name="q9" value="1"> To greet visitors and handle calls</label><br>
+  <label><input type="radio" name="q9" value="0"> To conduct training sessions</label><br>
+  <label><input type="radio" name="q9" value="0"> To manage payroll</label><br>
+  <label><input type="radio" name="q9" value="0"> To design marketing campaigns</label><br>
+</div>
+
+<!-- Question 10 -->
+<div class="question">
+  <p>10. Which of the following is a common office layout style?</p>
+  <label><input type="radio" name="q10" value="1"> Open plan</label><br>
+  <label><input type="radio" name="q10" value="0"> Factory line</label><br>
+  <label><input type="radio" name="q10" value="0"> Retail floor</label><br>
+  <label><input type="radio" name="q10" value="0"> Warehouse grid</label><br>
+</div>
+
+<!-- Question 11 -->
+<div class="question">
+  <p>11. Which of the following is part of the marketing mix?</p>
+  <label><input type="radio" name="q11" value="0"> Payroll</label><br>
+  <label><input type="radio" name="q11" value="0"> Procurement</label><br>
+  <label><input type="radio" name="q11" value="0"> Production</label><br>
+  <label><input type="radio" name="q11" value="1"> Price</label><br>
+</div>
+
+<!-- Question 12 -->
+<div class="question">
+  <p>12. What is the main goal of market segmentation?</p>
+  <label><input type="radio" name="q12" value="0"> To improve office layout</label><br>
+  <label><input type="radio" name="q12" value="1"> To divide the market into distinct groups</label><br>
+  <label><input type="radio" name="q12" value="0"> To reduce employee turnover</label><br>
+  <label><input type="radio" name="q12" value="0"> To increase production</label><br>
+</div>
+
+<!-- Question 13 -->
+<div class="question">
+  <p>13. Which term refers to the process of promoting and selling products?</p>
+  <label><input type="radio" name="q13" value="0"> Auditing</label><br>
+  <label><input type="radio" name="q13" value="0"> Distribution</label><br>
+  <label><input type="radio" name="q13" value="1"> Marketing</label><br>
+  <label><input type="radio" name="q13" value="0"> Manufacturing</label><br>
+</div>
+
+<!-- Question 14 -->
+<div class="question">
+  <p>14. Which of the following is a digital marketing channel?</p>
+  <label><input type="radio" name="q14" value="0"> Newspaper</label><br>
+  <label><input type="radio" name="q14" value="1"> Social media</label><br>
+  <label><input type="radio" name="q14" value="0"> Television</label><br>
+  <label><input type="radio" name="q14" value="0"> Billboard</label><br>
+</div>
+
+<!-- Question 15 -->
+<div class="question">
+  <p>15. What does 'USP' stand for in marketing?</p>
+  <label><input type="radio" name="q15" value="0"> Universal Sales Plan</label><br>
+  <label><input type="radio" name="q15" value="0"> Unit Sales Performance</label><br>
+  <label><input type="radio" name="q15" value="1"> Unique Selling Proposition</label><br>
+  <label><input type="radio" name="q15" value="0"> User Satisfaction Policy</label><br>
+</div>
+
+ <!-- Question 16 -->
+<div class="question">
+  <p>16. Which festival attracts tourists to Pushkar?</p>
+  <label><input type="radio" name="q16" value="1"> Camel Fair</label><br>
+  <label><input type="radio" name="q16" value="0"> Kite Festival</label><br>
+  <label><input type="radio" name="q16" value="0"> Holi Festival</label><br>
+  <label><input type="radio" name="q16" value="0"> Diwali</label><br>
+</div>
+
+<!-- Question 17 -->
+<div class="question">
+  <p>17. Where is the famous rock-cut Ellora Caves located?</p>
+  <label><input type="radio" name="q17" value="1"> Maharashtra</label><br>
+  <label><input type="radio" name="q17" value="0"> Odisha</label><br>
+  <label><input type="radio" name="q17" value="0"> Tamil Nadu</label><br>
+  <label><input type="radio" name="q17" value="0"> Madhya Pradesh</label><br>
+</div>
+
+<!-- Question 18 -->
+<div class="question">
+  <p>18. Which city is famous for its ghats and spiritual atmosphere?</p>
+  <label><input type="radio" name="q18" value="1"> Varanasi</label><br>
+  <label><input type="radio" name="q18" value="0"> Rishikesh</label><br>
+  <label><input type="radio" name="q18" value="0"> Haridwar</label><br>
+  <label><input type="radio" name="q18" value="0"> Ayodhya</label><br>
+</div>
+
+<!-- Question 19 -->
+<div class="question">
+  <p>19. Which city is called the "Queen of the Hills"?</p>
+  <label><input type="radio" name="q19" value="1"> Darjeeling</label><br>
+  <label><input type="radio" name="q19" value="0"> Shimla</label><br>
+  <label><input type="radio" name="q19" value="0"> Mussoorie</label><br>
+  <label><input type="radio" name="q19" value="0"> Ooty</label><br>
+</div>
+
+<!-- Question 20 -->
+<div class="question">
+  <p>20. Which wildlife sanctuary is famous for tigers in Madhya Pradesh?</p>
+  <label><input type="radio" name="q20" value="1"> Kanha National Park</label><br>
+  <label><input type="radio" name="q20" value="0"> Jim Corbett</label><br>
+  <label><input type="radio" name="q20" value="0"> Kaziranga</label><br>
+  <label><input type="radio" name="q20" value="0"> Sundarbans</label><br>
+</div>
+<!-- Question 21 -->
+<div class="question">
+  <p>21. Which hill station is in Himachal Pradesh?</p>
+  <label><input type="radio" name="q21" value="1"> Manali</label><br>
+  <label><input type="radio" name="q21" value="0"> Mussoorie</label><br>
+  <label><input type="radio" name="q21" value="0"> Darjeeling</label><br>
+  <label><input type="radio" name="q21" value="0"> Ooty</label><br>
+</div>
+
+<!-- Question 22 -->
+<div class="question">
+  <p>22. Which UNESCO site is a Buddhist monastic complex?</p>
+  <label><input type="radio" name="q22" value="1"> Nalanda</label><br>
+  <label><input type="radio" name="q22" value="0"> Bodh Gaya</label><br>
+  <label><input type="radio" name="q22" value="0"> Sanchi</label><br>
+  <label><input type="radio" name="q22" value="0"> Amaravati</label><br>
+</div>
+
+<!-- Question 23 -->
+<div class="question">
+  <p>23. Which northeastern state is known for living root bridges?</p>
+  <label><input type="radio" name="q23" value="1"> Meghalaya</label><br>
+  <label><input type="radio" name="q23" value="0"> Manipur</label><br>
+  <label><input type="radio" name="q23" value="0"> Mizoram</label><br>
+  <label><input type="radio" name="q23" value="0"> Tripura</label><br>
+</div>
+
+<!-- Question 24 -->
+<div class="question">
+  <p>24. Where is the Gateway of India located?</p>
+  <label><input type="radio" name="q24" value="1"> Mumbai</label><br>
+  <label><input type="radio" name="q24" value="0"> Kolkata</label><br>
+  <label><input type="radio" name="q24" value="0"> Chennai</label><br>
+  <label><input type="radio" name="q24" value="0"> Hyderabad</label><br>
+</div>
+
+<!-- Question 25 -->
+<div class="question">
+  <p>25. Which city is home to Charminar?</p>
+  <label><input type="radio" name="q25" value="1"> Hyderabad</label><br>
+  <label><input type="radio" name="q25" value="0"> Lucknow</label><br>
+  <label><input type="radio" name="q25" value="0"> Bhopal</label><br>
+  <label><input type="radio" name="q25" value="0"> Pune</label><br>
+</div>
+
+<!-- Question 26 -->
+<div class="question">
+  <p>26. Which mountain range runs parallel to the western coast of India?</p>
+  <label><input type="radio" name="q26" value="1"> Western Ghats</label><br>
+  <label><input type="radio" name="q26" value="0"> Himalayas</label><br>
+  <label><input type="radio" name="q26" value="0"> Aravallis</label><br>
+  <label><input type="radio" name="q26" value="0"> Vindhyas</label><br>
+</div>
+
+<!-- Question 27 -->
+<div class="question">
+  <p>27. Where is the famous Jagannath Temple located?</p>
+  <label><input type="radio" name="q27" value="1"> Puri</label><br>
+  <label><input type="radio" name="q27" value="0"> Bhubaneswar</label><br>
+  <label><input type="radio" name="q27" value="0"> Chennai</label><br>
+  <label><input type="radio" name="q27" value="0"> Varanasi</label><br>
+</div>
+
+<!-- Question 28 -->
+<div class="question">
+  <p>28. Which desert festival is celebrated in Jaisalmer?</p>
+  <label><input type="radio" name="q28" value="1"> Desert Festival</label><br>
+  <label><input type="radio" name="q28" value="0"> Camel Festival</label><br>
+  <label><input type="radio" name="q28" value="0"> Holi Festival</label><br>
+  <label><input type="radio" name="q28" value="0"> Diwali Fair</label><br>
+</div>
+
+<!-- Question 29 -->
+<div class="question">
+  <p>29. Which state is known for Kumbh Mela?</p>
+  <label><input type="radio" name="q29" value="1"> Uttar Pradesh</label><br>
+  <label><input type="radio" name="q29" value="0"> Bihar</label><br>
+  <label><input type="radio" name="q29" value="0"> Maharashtra</label><br>
+  <label><input type="radio" name="q29" value="0"> Gujarat</label><br>
+</div>
+
+<!-- Question 30 -->
+<div class="question">
+  <p>30. Which city is famous for ancient cave paintings at Bhimbetka?</p>
+  <label><input type="radio" name="q30" value="1"> Bhopal</label><br>
+  <label><input type="radio" name="q30" value="0"> Indore</label><br>
+  <label><input type="radio" name="q30" value="0"> Gwalior</label><br>
+  <label><input type="radio" name="q30" value="0"> Jabalpur</label><br>
+</div>
+<!-- Question 31 -->
+<div class="question">
+  <p>31. Which region is known for floating markets in India?</p>
+  <label><input type="radio" name="q31" value="1"> Srinagar</label><br>
+  <label><input type="radio" name="q31" value="0"> Kolkata</label><br>
+  <label><input type="radio" name="q31" value="0"> Cochin</label><br>
+  <label><input type="radio" name="q31" value="0"> Varanasi</label><br>
+</div>
+
+<!-- Question 32 -->
+<div class="question">
+  <p>32. Which desert is found in Rajasthan?</p>
+  <label><input type="radio" name="q32" value="1"> Thar Desert</label><br>
+  <label><input type="radio" name="q32" value="0"> Sahara Desert</label><br>
+  <label><input type="radio" name="q32" value="0"> Kalahari Desert</label><br>
+  <label><input type="radio" name="q32" value="0"> Gobi Desert</label><br>
+</div>
+
+<!-- Question 33 -->
+<div class="question">
+  <p>33. Which city is famous for Ramoji Film City?</p>
+  <label><input type="radio" name="q33" value="1"> Hyderabad</label><br>
+  <label><input type="radio" name="q33" value="0"> Mumbai</label><br>
+  <label><input type="radio" name="q33" value="0"> Bengaluru</label><br>
+  <label><input type="radio" name="q33" value="0"> Chennai</label><br>
+</div>
+
+<!-- Question 34 -->
+<div class="question">
+  <p>34. Which place is famous for toy trains in the hills?</p>
+  <label><input type="radio" name="q34" value="1"> Darjeeling</label><br>
+  <label><input type="radio" name="q34" value="0"> Shimla</label><br>
+  <label><input type="radio" name="q34" value="0"> Matheran</label><br>
+  <label><input type="radio" name="q34" value="0"> Ooty</label><br>
+</div>
+
+<!-- Question 35 -->
+<div class="question">
+  <p>35. Which Indian city has the largest film industry?</p>
+  <label><input type="radio" name="q35" value="1"> Mumbai</label><br>
+  <label><input type="radio" name="q35" value="0"> Delhi</label><br>
+  <label><input type="radio" name="q35" value="0"> Hyderabad</label><br>
+  <label><input type="radio" name="q35" value="0"> Kolkata</label><br>
+</div>
+
+<!-- Question 36 -->
+<div class="question">
+  <p>36. Which wildlife sanctuary is in Assam?</p>
+  <label><input type="radio" name="q36" value="1"> Kaziranga</label><br>
+  <label><input type="radio" name="q36" value="0"> Ranthambore</label><br>
+  <label><input type="radio" name="q36" value="0"> Bandipur</label><br>
+  <label><input type="radio" name="q36" value="0"> Gir</label><br>
+</div>
+
+<!-- Question 37 -->
+<div class="question">
+  <p>37. Which city is famous for ancient stepwells?</p>
+  <label><input type="radio" name="q37" value="1"> Ahmedabad</label><br>
+  <label><input type="radio" name="q37" value="0"> Jaipur</label><br>
+  <label><input type="radio" name="q37" value="0"> Pune</label><br>
+  <label><input type="radio" name="q37" value="0"> Chandigarh</label><br>
+</div>
+
+<!-- Question 38 -->
+<div class="question">
+  <p>38. Where is the famous Hawa Mahal located?</p>
+  <label><input type="radio" name="q38" value="1"> Jaipur</label><br>
+  <label><input type="radio" name="q38" value="0"> Jodhpur</label><br>
+  <label><input type="radio" name="q38" value="0"> Udaipur</label><br>
+  <label><input type="radio" name="q38" value="0"> Bikaner</label><br>
+</div>
+
+<!-- Question 39 -->
+<div class="question">
+  <p>39. Which coastal city is known for Marine Drive?</p>
+  <label><input type="radio" name="q39" value="1"> Mumbai</label><br>
+  <label><input type="radio" name="q39" value="0"> Chennai</label><br>
+  <label><input type="radio" name="q39" value="0"> Kochi</label><br>
+  <label><input type="radio" name="q39" value="0"> Visakhapatnam</label><br>
+</div>
+
+<!-- Question 40 -->
+<div class="question">
+  <p>40. Where is India’s first heritage train operated?</p>
+  <label><input type="radio" name="q40" value="1"> Darjeeling</label><br>
+  <label><input type="radio" name="q40" value="0"> Kalka</label><br>
+  <label><input type="radio" name="q40" value="0"> Shimla</label><br>
+  <label><input type="radio" name="q40" value="0"> Nilgiris</label><br>
+</div>
+<!-- Question 41 -->
+<div class="question">
+  <p>41. Which place is famous for snow sports in India?</p>
+  <label><input type="radio" name="q41" value="1"> Gulmarg</label><br>
+  <label><input type="radio" name="q41" value="0"> Auli</label><br>
+  <label><input type="radio" name="q41" value="0"> Shimla</label><br>
+  <label><input type="radio" name="q41" value="0"> Manali</label><br>
+</div>
+
+<!-- Question 42 -->
+<div class="question">
+  <p>42. Which city is known as the “City of Joy”?</p>
+  <label><input type="radio" name="q42" value="1"> Kolkata</label><br>
+  <label><input type="radio" name="q42" value="0"> Chennai</label><br>
+  <label><input type="radio" name="q42" value="0"> Delhi</label><br>
+  <label><input type="radio" name="q42" value="0"> Mumbai</label><br>
+</div>
+
+<!-- Question 43 -->
+<div class="question">
+  <p>43. Where is the Lotus Temple located?</p>
+  <label><input type="radio" name="q43" value="1"> Delhi</label><br>
+  <label><input type="radio" name="q43" value="0"> Agra</label><br>
+  <label><input type="radio" name="q43" value="0"> Amritsar</label><br>
+  <label><input type="radio" name="q43" value="0"> Jaipur</label><br>
+</div>
+
+<!-- Question 44 -->
+<div class="question">
+  <p>44. Which temple complex is famous in Madurai?</p>
+  <label><input type="radio" name="q44" value="1"> Meenakshi Temple</label><br>
+  <label><input type="radio" name="q44" value="0"> Brihadeeswara Temple</label><br>
+  <label><input type="radio" name="q44" value="0"> Jagannath Temple</label><br>
+  <label><input type="radio" name="q44" value="0"> Konark Temple</label><br>
+</div>
+
+<!-- Question 45 -->
+<div class="question">
+  <p>45. Which region is known for boat races during Onam?</p>
+  <label><input type="radio" name="q45" value="1"> Kerala</label><br>
+  <label><input type="radio" name="q45" value="0"> Karnataka</label><br>
+  <label><input type="radio" name="q45" value="0"> Tamil Nadu</label><br>
+  <label><input type="radio" name="q45" value="0"> Andhra Pradesh</label><br>
+</div>
+
+<!-- Question 46 -->
+<div class="question">
+  <p>46. Which city is known for the international yoga festival?</p>
+  <label><input type="radio" name="q46" value="1"> Rishikesh</label><br>
+  <label><input type="radio" name="q46" value="0"> Varanasi</label><br>
+  <label><input type="radio" name="q46" value="0"> Haridwar</label><br>
+  <label><input type="radio" name="q46" value="0"> Mathura</label><br>
+</div>
+
+<!-- Question 47 -->
+<div class="question">
+  <p>47. Which monument is famous in Hyderabad?</p>
+  <label><input type="radio" name="q47" value="1"> Charminar</label><br>
+  <label><input type="radio" name="q47" value="0"> Golconda Fort</label><br>
+  <label><input type="radio" name="q47" value="0"> Falaknuma Palace</label><br>
+  <label><input type="radio" name="q47" value="0"> Salar Jung Museum</label><br>
+</div>
+
+<!-- Question 48 -->
+<div class="question">
+  <p>48. Which UNESCO site is known for iron pillar and ancient temples?</p>
+  <label><input type="radio" name="q48" value="1"> Qutub Complex</label><br>
+  <label><input type="radio" name="q48" value="0"> Humayun’s Tomb</label><br>
+  <label><input type="radio" name="q48" value="0"> Red Fort</label><br>
+  <label><input type="radio" name="q48" value="0"> Jama Masjid</label><br>
+</div>
+
+<!-- Question 49 -->
+<div class="question">
+  <p>49. Where is the famous Nehru Trophy Boat Race held?</p>
+  <label><input type="radio" name="q49" value="1"> Alleppey</label><br>
+  <label><input type="radio" name="q49" value="0"> Cochin</label><br>
+  <label><input type="radio" name="q49" value="0"> Trivandrum</label><br>
+  <label><input type="radio" name="q49" value="0"> Kozhikode</label><br>
+</div>
+
+<!-- Question 50 -->
+<div class="question">
+  <p>50. Which state is home to Valley of Flowers National Park?</p>
+  <label><input type="radio" name="q50" value="1"> Uttarakhand</label><br>
+  <label><input type="radio" name="q50" value="0"> Himachal Pradesh</label><br>
+  <label><input type="radio" name="q50" value="0"> Sikkim</label><br>
+  <label><input type="radio" name="q50" value="0"> Jammu & Kashmir</label><br>
+</div>
+
+<input type="submit" value="Submit Quiz" />
+</form>
+
+  <!-- JavaScript -->
+  
+<div id="error"></div>
+
+  <script>
+    const studentData = {
+      "THSC220": { name: "Ms. Kashish", institute: "Incredible Institute of Hospitality and Travel Management – Etawah" },
+      "THSC221": { name: "Ms. Sandhya", institute: "Incredible Institute of Hospitality and Travel Management – Etawah" },
+      "THSC222": { name: "Ms. Kajal", institute: "Incredible Institute of Hospitality and Travel Management – Etawah" },
+      "THSC223": { name: "Ms. Sonam", institute: "Incredible Institute of Hospitality and Travel Management – Etawah" },
+      "THSC224": { name: "Mr. Tularam", institute: "Incredible Institute of Hospitality and Travel Management – Etawah" }
+    };
+
+    let formIDValid = false;
+    let timerStarted = false;
+    let totalSeconds = 60 * 60;
+
+    function checkFormID() {
+      const formID = document.getElementById("formID").value.trim().toUpperCase();
+      const rollSection = document.getElementById("rollSection");
+      const quizSection = document.getElementById("quizSection");
+      const errorMsg = document.getElementById("error");
+
+      if (formID === "THSCIA2025") {
+        formIDValid = true;
+        rollSection.classList.remove("hidden");
+        quizSection.classList.add("hidden");
+        errorMsg.textContent = "";
+      } else {
+        formIDValid = false;
+        rollSection.classList.add("hidden");
+        quizSection.classList.add("hidden");
+        errorMsg.textContent = "Invalid Form ID.";
+      }
+    }
+
+    function checkRollNo() {
+      const rn = document.getElementById("rollNo").value.trim().toUpperCase();
+      const data = studentData[rn];
+      const nameField = document.getElementById("studentName");
+      const instituteField = document.getElementById("instituteName");
+      const quizSection = document.getElementById("quizSection");
+      const errorMsg = document.getElementById("error");
+
+      if (formIDValid && data) {
+        nameField.value = data.name;
+        instituteField.value = data.institute;
+        quizSection.classList.remove("hidden");
+        errorMsg.textContent = "";
+
+        if (!timerStarted) {
+          updateTimer();
+          timerStarted = true;
+        }
+      } else {
+        nameField.value = "";
+        instituteField.value = "";
+        quizSection.classList.add("hidden");
+        errorMsg.textContent = "Invalid Roll Number.";
+      }
+    }
+
+    function updateTimer() {
+      const timerDisplay = document.getElementById("timer");
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+      timerDisplay.textContent = `Time Remaining: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        setTimeout(updateTimer, 1000);
+      } else {
+        timerDisplay.textContent = "Time's up!";
+        // Optional: auto-submit or disable inputs
+      }
+    }
+  </script>
+function handleSubmit(event) {
+  event.preventDefault();
+
+  // Sync visible fields to hidden fields
+  document.getElementById("formIDField").value = document.getElementById("formID").value;
+  document.getElementById("rollNoField").value = document.getElementById("rollNo").value;
+  document.getElementById("studentNameField").value = document.getElementById("studentName").value;
+  document.getElementById("instituteNameField").value = document.getElementById("instituteName").value;
+
+  const form = document.getElementById("quizForm");
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData
+  }).then(() => {
+    form.style.display = "none"; // hides the form
+  });
+}
